@@ -15,6 +15,10 @@ namespace Girrafe
             characterAge = 27;
             Console.WriteLine("There once was a man named " + characterName);
             Console.WriteLine("He was " + characterAge + " years old");
+            characterName = "Robert";
+            characterAge++;
+            Console.WriteLine("Name " + characterName);
+            Console.WriteLine("Age " + characterAge);
 
             Console.ReadLine();
         }
