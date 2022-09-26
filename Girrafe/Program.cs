@@ -10,13 +10,17 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            string characterName = "Richard Antonio Yahaha";
-            int characterAge;
-            characterAge = 27;
-            Console.WriteLine("There once was a man named " + characterName);
-            Console.WriteLine("He was " + characterAge + " years old");
+            string phrase = "fundamental C#";
+            char grade = 'A';
+            int age = 27;
+            double gpa = 3.14;
+            bool isMale = true;
+
+            Console.WriteLine("Hello this is " + phrase);
+            Console.WriteLine(gpa);
 
             Console.ReadLine();
+
         }
     }
 }
