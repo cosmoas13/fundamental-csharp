@@ -10,17 +10,19 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            string phrase = "fundamental C#";
-            char grade = 'A';
-            int age = 27;
-            double gpa = 3.14;
-            bool isMale = true;
+            // double is number decimal
+            double num1, num2;
+            Console.Write("Enter a number: ");
+            // Convert string to double number decimal
+            num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a another number: ");
+            num2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Hello this is " + phrase);
-            Console.WriteLine(gpa);
+            // addition num1 + num2
+            Console.WriteLine(num1 + num2);
 
+            // show result num1 + num2
             Console.ReadLine();
-
         }
     }
 }
