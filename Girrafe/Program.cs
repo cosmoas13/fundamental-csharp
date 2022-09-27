@@ -10,17 +10,22 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            string phrase = "fundamental C#";
-            char grade = 'A';
-            int age = 27;
-            double gpa = 3.14;
-            bool isMale = true;
+            string color, pluralNoun, celebrity;
 
-            Console.WriteLine("Hello this is " + phrase);
-            Console.WriteLine(gpa);
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine();
+
+            Console.Write("Enter a plural noun: ");
+            pluralNoun = Console.ReadLine();
+
+            Console.Write("Enter a celebrity: ");
+            celebrity = Console.ReadLine();
+
+            Console.WriteLine("Roses are " + color);
+            Console.WriteLine(pluralNoun + " are blue");
+            Console.WriteLine("I Love " + celebrity);
 
             Console.ReadLine();
-
         }
     }
 }
