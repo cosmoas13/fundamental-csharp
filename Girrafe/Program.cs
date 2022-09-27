@@ -10,17 +10,18 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            string phrase = "fundamental C#";
-            char grade = 'A';
-            int age = 27;
-            double gpa = 3.14;
-            bool isMale = true;
-
-            Console.WriteLine("Hello this is " + phrase);
-            Console.WriteLine(gpa);
-
+            // we can add additon ( + ), substraction ( - ),
+            // division ( / ), multiplication ( * ) 
+            // and mod using ( % )
+            Console.WriteLine( 5 % 2 );
+            // 4 + 2 * 3 = 2 * 3 + 4 = 10
+            Console.WriteLine(4 + 2 * 3);
+            // if using (4 + 2) * 3 = 18
+            Console.WriteLine((4 + 2) * 3);
+            // decimal number
+            Console.WriteLine(5.0 + 1.1);
+            // Math.abs for absolute number
             Console.ReadLine();
-
         }
     }
 }
