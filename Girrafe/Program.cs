@@ -10,17 +10,20 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            string phrase = "fundamental C#";
-            char grade = 'A';
-            int age = 27;
-            double gpa = 3.14;
-            bool isMale = true;
+            string name;
+            name = "Kevin";
+            int age;
+            age = 27;
 
-            Console.WriteLine("Hello this is " + phrase);
-            Console.WriteLine(gpa);
+            YourName(name, age);
 
             Console.ReadLine();
+        }
 
+        static void YourName(string name, int age)
+        {
+            Console.WriteLine("My name is " + name);
+            Console.WriteLine("Age " + age);
         }
     }
 }
