@@ -10,17 +10,19 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            string phrase = "fundamental C#";
-            char grade = 'A';
-            int age = 27;
-            double gpa = 3.14;
-            bool isMale = true;
+            int[] luckyNumbers = { 4, 15, 13, 5, 3, 66 };
+            // can hold 1 array item
+            string[] friends = new string[1];
+            friends[0] = "Kevin";
+            // display error cause array can handle 1 array
+            // friends[1] = "albert";
 
-            Console.WriteLine("Hello this is " + phrase);
-            Console.WriteLine(gpa);
+            // assign new array into index 1, so 15 replace 900
+            luckyNumbers[1] = 900;
 
+            Console.WriteLine(luckyNumbers[1]);
+            Console.WriteLine(friends[0]);
             Console.ReadLine();
-
         }
     }
 }
