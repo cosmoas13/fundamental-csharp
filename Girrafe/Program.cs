@@ -10,38 +10,32 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GetMax(12, 2));
-            Console.WriteLine(GetMaxThreeNumber(200, 3, 100));
-            Console.ReadLine();
-        }
+            Console.Write("Enter the Number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
-        static int GetMax(int num1, int num2)
-        {
-            int result;
-            if (num1 > num2)
-            {
-                 result = num1;
-            }
-            else {
-                 result = num2;
-            }
-            return result;
-        }
+            Console.Write("Enter the Operator: ");
+            string op = Console.ReadLine();
 
-        static int GetMaxThreeNumber(int num1, int num2, int num3)
-        {
-            int result;
-            if(num1 >= num2 && num1 >= num3)
+            Console.Write("Enter the Number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if(op == "+")
             {
-                result = num1;
-            } else if (num2 >= num1 && num2 >= num3)
+                Console.WriteLine(num1 + num2);
+            } else if (op == "-")
             {
-                result = num2;
+                Console.WriteLine(num1 - num2);
+            } else if (op == "*")
+            {
+                Console.WriteLine(num1 * num2);
+            } else if (op == "/")
+            {
+                Console.WriteLine(num1 / num2);
             } else
             {
-                result = num3;
+                Console.WriteLine("Invalid Operator");
             }
-            return result;
+            Console.ReadLine();
         }
     }
 }
