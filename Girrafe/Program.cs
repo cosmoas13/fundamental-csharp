@@ -10,20 +10,24 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            string name;
-            name = "Kevin";
-            int age;
-            age = 27;
+            bool isMale = false;
+            bool isTall = true;
 
-            YourName(name, age);
+            if (isMale && isTall)
+            {
+                Console.WriteLine("You are a tall man");
+            } else if (isMale && !isTall)
+            {
+                Console.WriteLine("You are a tiny man");
+            } else if (!isMale && isTall)
+            {
+                Console.WriteLine("You are not a male but you are tall");
+            } else
+            {
+                Console.WriteLine("You are either not male or not tall or both");
+            }
 
             Console.ReadLine();
-        }
-
-        static void YourName(string name, int age)
-        {
-            Console.WriteLine("My name is " + name);
-            Console.WriteLine("Age " + age);
         }
     }
 }
