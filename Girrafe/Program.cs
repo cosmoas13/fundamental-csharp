@@ -10,24 +10,38 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            bool isMale = false;
-            bool isTall = true;
+            Console.WriteLine(GetMax(12, 2));
+            Console.WriteLine(GetMaxThreeNumber(200, 3, 100));
+            Console.ReadLine();
+        }
 
-            if (isMale && isTall)
+        static int GetMax(int num1, int num2)
+        {
+            int result;
+            if (num1 > num2)
             {
-                Console.WriteLine("You are a tall man");
-            } else if (isMale && !isTall)
+                 result = num1;
+            }
+            else {
+                 result = num2;
+            }
+            return result;
+        }
+
+        static int GetMaxThreeNumber(int num1, int num2, int num3)
+        {
+            int result;
+            if(num1 >= num2 && num1 >= num3)
             {
-                Console.WriteLine("You are a tiny man");
-            } else if (!isMale && isTall)
+                result = num1;
+            } else if (num2 >= num1 && num2 >= num3)
             {
-                Console.WriteLine("You are not a male but you are tall");
+                result = num2;
             } else
             {
-                Console.WriteLine("You are either not male or not tall or both");
+                result = num3;
             }
-
-            Console.ReadLine();
+            return result;
         }
     }
 }
