@@ -10,19 +10,33 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            int index = 1;
-            while (index <= 5)
-            {
-                Console.WriteLine(index);
-                index++;
-            }
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
 
-            // int index = 6
-            /*do
+            while(guess != secretWord && !outOfGuesses)
             {
-                Console.WriteLine(index);
-                index++;
-            } while (index <= 5);*/
+                if(guessCount < guessLimit)
+                {
+                    Console.Write("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    outOfGuesses=true;
+                }
+            }
+            if (outOfGuesses)
+            {
+                Console.Write("You Lose!");
+            }
+            else
+            {
+                Console.Write("You Win!");
+            }
 
             Console.ReadLine();
         }
