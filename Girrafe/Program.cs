@@ -10,21 +10,37 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            int index = 1;
-            while (index <= 5)
+            /*int[] luckyNumbers = { 4, 8, 15, 16, 23, 44 };
+            for (int i = 1; i <= luckyNumbers.Length; i++)
             {
-                Console.WriteLine(index);
-                index++;
+                Console.WriteLine(luckyNumbers[i]);
+            }*/
+/*            Console.WriteLine(GetPow(3, 2));*/
+            Console.WriteLine(GetFac(3));
+            Console.ReadLine();
+        }
+
+        static int GetPow(int baseNum, int powNum)
+        {
+            int result = 1;
+            for (int i = 0; i < powNum; i++)
+            {
+                result = result * baseNum;
             }
 
-            // int index = 6
-            /*do
-            {
-                Console.WriteLine(index);
-                index++;
-            } while (index <= 5);*/
+            return result;
+        }
 
-            Console.ReadLine();
+        static int GetFac(int res)
+        {
+            int num = 1;
+            int result = 1;
+            for (int i = 0; i < res; i++)
+            {
+                result = result * num;
+                num = num + 1;
+            }
+            return result;
         }
     }
 }
