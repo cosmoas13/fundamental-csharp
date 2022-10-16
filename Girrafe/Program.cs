@@ -10,20 +10,14 @@ namespace Girrafe
     {
         static void Main(string[] args)
         {
-            int index = 1;
-            while (index <= 5)
+            int[,] numberGrid =
             {
-                Console.WriteLine(index);
-                index++;
-            }
+                {1,2 },
+                {3,4 },
+                {5,6 }
+            };
 
-            // int index = 6
-            /*do
-            {
-                Console.WriteLine(index);
-                index++;
-            } while (index <= 5);*/
-
+            Console.WriteLine(numberGrid[0, 1]);
             Console.ReadLine();
         }
     }
